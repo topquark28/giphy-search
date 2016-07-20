@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>giphy-images</title>
+    </head>
+    <body>
+        <h2>You searched for "{{search_term}}"...</h2>
+        <h2>Your images, {{name}}:</h2>
+        <div align=center>
+        {% for image in image_urls %}
+            <img src={{image}}><br>
+        {% endfor %}
+        </div>
+    </body>
+</html>
